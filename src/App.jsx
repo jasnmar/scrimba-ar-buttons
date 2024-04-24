@@ -5,9 +5,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-     Some text from app
-    </>
+    <main>
+      {/* Your custom Button component here */}
+      <button>Click here</button>
+    </main>
   )
 }
 
