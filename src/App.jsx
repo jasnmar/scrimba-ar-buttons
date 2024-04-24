@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Button from './component/Button/Button'
-import { FaBilibili } from "react-icons/fa6";
+import { FaMoneyBill } from "react-icons/fa6";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +15,7 @@ function App() {
   return (
     <main>
       {/* Your custom Button component here */}
-      <Button><FaBilibili /> Buy now!</Button>
+      <Button><FaMoneyBill /> Buy now!</Button>
     </main>
   )
 }
