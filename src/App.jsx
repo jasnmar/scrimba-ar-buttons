@@ -2,20 +2,28 @@ import { useState } from 'react'
 import './App.css'
 import Button from './component/Button/Button'
 import { FaMoneyBill } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
 
 function App() {
   const [count, setCount] = useState(0)
 
 /**
- * Challenge: Make the Button accept and display children.
+ * Challenge: Add an onClick handler to the Button
+ * component instance (the one on this page). Then
+ * make whatever changes you need for it to actually
+ * work.
  * 
- * Change the text to say "Buy now!" so it's less boring 🥱
+ * Clicking the button should log "Logging in..." 
+ * to the console.
  */
+
+  function handleBtnClick(e) {
+    console.log("Logging in...")
+  }
 
   return (
     <main>
-      {/* Your custom Button component here */}
-      <Button><FaMoneyBill /> Buy now!</Button>
+      <Button clickHandler={handleBtnClick}><FcGoogle /> Log in with Google</Button>
     </main>
   )
 }
