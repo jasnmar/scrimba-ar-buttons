@@ -1,9 +1,10 @@
 import "./Button.css"
 
 function Button(props) {
+    console.log('props:', props)
     return (
         <>
-            <button onClick={props.clickHandler}>{props.children}</button>
+            <button {...props }>{props.children}</button>
         </>
     )
 }

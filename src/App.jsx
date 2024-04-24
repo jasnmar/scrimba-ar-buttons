@@ -23,7 +23,7 @@ function App() {
 
   return (
     <main>
-      <Button clickHandler={handleBtnClick}><FcGoogle /> Log in with Google</Button>
+      <Button size="lg"><FcGoogle /> Log in with Google</Button>
     </main>
   )
 }
