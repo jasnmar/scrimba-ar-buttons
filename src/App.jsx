@@ -5,17 +5,16 @@ import Button from './component/Button/Button'
 function App() {
   const [count, setCount] = useState(0)
 
-  /**
- * Challenge: 
+/**
+ * Challenge: Make the Button accept and display children.
  * 
- * Build a Button component in a separate file.
- * (For styling purposes, make sure it renders an HTML <button> element)
- * Your button component should take a `text` prop
+ * Change the text to say "Buy now!" so it's less boring 🥱
  */
+
   return (
     <main>
       {/* Your custom Button component here */}
-      <Button text="fancy button text"/>
+      <Button>Buy now!</Button>
     </main>
   )
 }
