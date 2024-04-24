@@ -13,7 +13,7 @@ function App() {
 
   return (
     <main>
-      <Button variant="success" size="lg"><FcGoogle />Log in with Google</Button>
+      <Button variant="warning" size="lg"><FcGoogle />Log in with Google</Button>
     </main>
   )
 }

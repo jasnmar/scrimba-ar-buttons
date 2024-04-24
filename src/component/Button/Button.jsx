@@ -11,10 +11,7 @@ function Button({size, variant, children, className, ...rest}) {
      * variant.
      */
     let btnClass = size ? `button-${size} ${className}` : className
-    if(variant) {
-      console.log("running")
-      btnClass = `${btnClass} ${variant}` 
-    }
+    btnClass = variant ? `${btnClass} ${variant}`: btnClass
 
     return (
         <>
