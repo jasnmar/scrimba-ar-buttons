@@ -1,30 +1,20 @@
 import "./Button.css"
 
-function Button({size, children, className, ...rest}) {
+function Button({size, variant, children, className, ...rest}) {
     console.log(rest)
-        /**
-     * Challenge: accept the `size` prop and set the `className` of the
-     * <button> to:
+    /**
+     * Challenge: 
      * 
-     * "button-small" if `size` is "sm"
-     * "button-large" if `size` is "lg"
-     * 
-     * Note: don't try to manually add a `className` to the Button
-     * instance in index.js yet. (DO add `className` to this file
-     * as part of the challenge, though.)
+     * Accept a `variant` prop and style the Button component
+     * accordingly. The values can be `success`, `warning`, or `danger`. 
+     * Check the Figma design for the specific colors to be used for each
+     * variant.
      */
-    const btnClass = getBtnClass()
-    function getBtnClass() {
-      let cName
-      if(size === "lg") {
-        cName = "button-large" + " " + className
-      } else if(size === "sm") {
-        cName = "button-small" + " " + className
-      }
-      return cName
+    let btnClass = size ? `button-${size} ${className}` : className
+    if(variant) {
+      console.log("running")
+      btnClass = `${btnClass} ${variant}` 
     }
-
-
 
     return (
         <>
