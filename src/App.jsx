@@ -8,13 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
 /**
- * Challenge: Add an onClick handler to the Button
- * component instance (the one on this page). Then
- * make whatever changes you need for it to actually
- * work.
- * 
- * Clicking the button should log "Logging in..." 
- * to the console.
+Mini challenge: Make it work with classname
  */
 
   function handleBtnClick(e) {
@@ -23,7 +17,7 @@ function App() {
 
   return (
     <main>
-      <Button size="lg"><FcGoogle /> Log in with Google</Button>
+      <Button className="green" size="lg"><FcGoogle />Log in with Google</Button>
     </main>
   )
 }

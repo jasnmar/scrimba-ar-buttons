@@ -1,8 +1,7 @@
 import "./Button.css"
 
-function Button(props) {
-    console.log('props: ', props)
-
+function Button({size, children, className, ...rest}) {
+    console.log(rest)
         /**
      * Challenge: accept the `size` prop and set the `className` of the
      * <button> to:
@@ -17,10 +16,10 @@ function Button(props) {
     const btnClass = getBtnClass()
     function getBtnClass() {
       let cName
-      if(props.size === "lg") {
-        cName = "button-large"
-      } else if(props.size === "sm") {
-        cName = "button-small"
+      if(size === "lg") {
+        cName = "button-large" + " " + className
+      } else if(size === "sm") {
+        cName = "button-small" + " " + className
       }
       return cName
     }
@@ -29,7 +28,7 @@ function Button(props) {
 
     return (
         <>
-            <button className={btnClass} {...props }>{props.children}</button>
+            <button className={btnClass} {...rest }>{children}</button>
         </>
     )
 }
